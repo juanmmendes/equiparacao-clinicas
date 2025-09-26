@@ -175,7 +175,7 @@ export default function EquiparacaoClinicaHospital(): React.JSX.Element {
       {/* Sticky topbar */}
       <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/90 backdrop-blur" data-testid="topbar">
         <div className={`${containerCx} flex h-16 items-center justify-between`}>
-          <a href="#top" className="flex items-center gap-3" aria-label="Ir para o topo">
+          <a href="#top" className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-3" aria-label="Ir para o topo">
             <Logo src={logoImage} alt="Marinho Mendes Advogados" className="h-9 w-auto lg:h-12" />
             <span className="text-sm font-semibold tracking-wide text-gray-900 lg:text-base">
               Marinho Mendes Advogados
@@ -394,7 +394,7 @@ export default function EquiparacaoClinicaHospital(): React.JSX.Element {
                 className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm"
                 {...fadeInUp}
               >
-                <div className="flex items-center gap-3">
+                <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-3">
                   <c.icon className="h-6 w-6 text-emerald-600" aria-hidden />
                   <h3 className="text-base font-semibold text-gray-900">{c.title}</h3>
                 </div>
@@ -627,12 +627,12 @@ export default function EquiparacaoClinicaHospital(): React.JSX.Element {
       {/* Rodapé */}
       <footer className="mt-16 border-t border-gray-200 bg-white" data-testid="footer">
         <div className={`${containerCx} py-8`}>
-          <div className="flex items-center justify-between gap-4">
-            <div className="flex items-center gap-3">
+          <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-3">
               <Logo src={logoImage} alt="Marinho Mendes Advogados" className="h-7 w-auto sm:h-8 lg:h-10" />
               <span className="text-sm font-semibold text-gray-900">Marinho Mendes Advogados</span>
             </div>
-            <div className="flex flex-wrap items-center gap-4 text-xs text-gray-600">
+            <div className="flex flex-wrap items-center gap-3 text-xs text-gray-600 sm:justify-end">
               <span className="inline-flex items-center gap-1"><Facebook className="h-3.5 w-3.5" aria-hidden /> <a className="underline-offset-2 hover:underline" href="https://www.facebook.com/marinhomendesadv">/marinhomendesadv</a></span>
               <span className="inline-flex items-center gap-1"><Instagram className="h-3.5 w-3.5" aria-hidden /> <a className="underline-offset-2 hover:underline" href="https://www.instagram.com/marinhomendesadv">@marinhomendesadv</a></span>
               <span className="inline-flex items-center gap-1"><Linkedin className="h-3.5 w-3.5" aria-hidden /> <a className="underline-offset-2 hover:underline" href="https://www.linkedin.com/company/14030512/">LinkedIn</a></span>
