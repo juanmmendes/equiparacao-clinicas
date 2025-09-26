@@ -41,7 +41,7 @@ const stagger = {
 const containerCx = "mx-auto max-w-7xl px-4 sm:px-6 lg:px-8";
 
 const GradientBadge: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <span className="inline-flex items-center rounded-full bg-gradient-to-r from-emerald-500 to-sky-500 px-3 py-1 text-xs font-semibold text-white shadow-sm">
+  <span className="inline-flex items-center rounded-full bg-gradient-to-r from-emerald-600 to-sky-500 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-white shadow-md sm:text-sm">
     {children}
   </span>
 );
@@ -241,19 +241,23 @@ export default function EquiparacaoClinicaHospital(): React.JSX.Element {
       <section id="top" className="relative overflow-hidden" data-testid="hero">
         <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-emerald-50 via-sky-50 to-white" aria-hidden />
         <div className={`${containerCx} py-16 sm:py-20 lg:py-24`}>
-          <div className="mx-auto max-w-3xl text-center">
+          <div className="mx-auto max-w-4xl text-center">
             <motion.div {...fadeInUp}>
-              <GradientBadge>Equiparação de Clínica e Hospital</GradientBadge>
+              <GradientBadge>Marinho Mendes Advogados</GradientBadge>
             </motion.div>
             <motion.h1
-              className="mt-4 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
+              className="mt-6 text-4xl font-black tracking-tight text-gray-900 sm:text-5xl lg:text-6xl"
               {...fadeInUp}
             >
-              Abordagem técnico-jurídica, ética e responsável para o setor de saúde
+              <span className="bg-gradient-to-r from-emerald-600 via-emerald-500 to-sky-500 bg-clip-text text-transparent">
+                Equiparação de Clínica e Hospital
+              </span>
             </motion.h1>
-            <motion.p className="mt-4 text-base leading-7 text-gray-700" {...fadeInUp}>
-              Conteúdo informativo sobre critérios e bases legais da equiparação, com foco em
-              credibilidade, conformidade e tomada de decisão segura.
+            <motion.p className="mt-6 text-lg leading-8 text-gray-700" {...fadeInUp}>
+              Abordagem técnico-jurídica, ética e responsável para clínicas e centros de saúde que buscam o enquadramento fiscal correto.
+            </motion.p>
+            <motion.p className="mt-3 text-base leading-7 text-gray-600" {...fadeInUp}>
+              Conteúdo informativo sobre critérios técnicos, conformidade regulatória e documentação essencial para decisões seguras.
             </motion.p>
             <motion.ul
               className="mx-auto mt-6 grid max-w-2xl gap-3 text-left sm:grid-cols-2"
